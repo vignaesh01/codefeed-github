@@ -88,6 +88,6 @@ Contributions are welcome! Open a PR or submit an issue for bug reports, feature
 
 ## 📜 License
 
-**Code Feeds for GitHub** is licensed under the [MIT License](LICENSE.TXT).
+**Code Feeds for GitHub** is licensed under the [3-Clause BSD License](LICENSE.TXT).
 
 ---
