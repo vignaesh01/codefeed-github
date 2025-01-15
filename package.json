@@ -1,7 +1,7 @@
 {
 	"name": "code-feeds-github",
 	"displayName": "Code Feeds for GitHub",
-	"description": "**Code Feeds for GitHub** is a fun and engaging VS Code extension that brings the latest changes to your favorite GitHub repositories (the ones you've ⭐ Starred) directly to your editor. Visualize those pull requests and code changes like never before – in a trendy, Instagram-style feed format complete with catchy captions! 🎉 ",
+	"description": "Code Feeds for GitHub is a fun and engaging VS Code extension that brings the latest changes to your favorite GitHub repositories (the ones you've ⭐ Starred) directly to your editor. Visualize those pull requests and code changes like never before – in a trendy, Instagram-style feed format complete with catchy captions! 🎉 ",
 	"version": "0.0.1",
 	"publisher": "VignaeshRamA",
 	"private": true,
