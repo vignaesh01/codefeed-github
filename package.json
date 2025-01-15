@@ -1,0 +1,92 @@
+{
+	"name": "code-feeds-github",
+	"displayName": "Code Feeds for GitHub",
+	"description": "Show Code Feeds for starred repositories on GitHub.",
+	"version": "0.0.1",
+	"publisher": "VignaeshRamA",
+	"private": true,
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Microsoft/vscode-extension-samples"
+	},
+	"engines": {
+		"vscode": "^1.95.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"viewsContainers": {
+			"activitybar": [
+				{
+					"id": "codeFeedsForGithub",
+					"title": "Code Feeds for GitHub",
+					"icon": "media/dep.svg"
+				}
+			]
+		},
+		"views": {
+			"codeFeedsForGithub": [
+				{
+					"id": "codeFeeds",
+					"name": "Starred Repositories",
+					"icon": "media/dep.svg",
+					"contextualTitle": "Starred Repositories"
+				}
+			]
+		},
+		"commands": [
+			{
+				"command": "codeFeeds.refreshEntry",
+				"title": "Refresh",
+				"icon": {
+					"light": "resources/light/refresh.svg",
+					"dark": "resources/dark/refresh.svg"
+				}
+			},
+			{
+				"command": "codeFeeds.clearGitHubToken",
+				"title": "Code Feeds for GitHub: Clear GitHub Token"
+			}
+		],
+		"menus": {
+			"view/title": [
+				{
+					"command": "codeFeeds.refreshEntry",
+					"when": "view == codeFeeds",
+					"group": "navigation"
+				}
+			]
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"lint": "eslint"
+	},
+	"devDependencies": {
+		"@eslint/js": "^9.13.0",
+		"@stylistic/eslint-plugin": "^2.9.0",
+		"@types/ftp": "^0.3.33",
+		"@types/mkdirp": "^0.5.2",
+		"@types/node": "^20",
+		"@types/rimraf": "^2.0.2",
+		"@types/vscode": "^1.95.0",
+		"eslint": "^9.13.0",
+		"typescript": "^5.7.2",
+		"typescript-eslint": "^8.16.0"
+	},
+	"dependencies": {
+		"axios": "^1.7.9",
+		"ftp": "^0.3.10",
+		"jsonc-parser": "^0.4.2",
+		"minimist": "^1.2.6",
+		"mkdirp": "^0.5.1",
+		"rimraf": "^2.6.2"
+	}
+}
