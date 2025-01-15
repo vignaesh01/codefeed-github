@@ -1,5 +1,4 @@
 import * as vscode from 'vscode';
-//import * as fs from 'fs';
 import * as path from 'path';
 import axios from 'axios';
 import {CodeFeed,generateFeedsUi} from './codeFeedsUi';
@@ -281,48 +280,6 @@ async showCodeFeeds(repoApiUrl: string) {
 		return "PR feed from LLM";
 	}
 
-
-	/**
-	 * Given the path to package.json, read all its dependencies and devDependencies.
-	 */
-	/*private getDepsInPackageJson(packageJsonPath: string): Repository[] {
-		const workspaceRoot = "";
-		if (this.pathExists(packageJsonPath) && workspaceRoot) {
-			const packageJson = JSON.parse(fs.readFileSync(packageJsonPath, 'utf-8'));
-
-			const toDep = (moduleName: string, version: string): Repository => {
-				if (this.pathExists(path.join(workspaceRoot, 'node_modules', moduleName))) {
-					return new Repository(moduleName, version, vscode.TreeItemCollapsibleState.Collapsed);
-				} else {
-					return new Repository(moduleName, version, vscode.TreeItemCollapsibleState.None, {
-						command: 'extension.openPackageOnNpm',
-						title: '',
-						arguments: [moduleName]
-					});
-				}
-			};
-
-			const deps = packageJson.dependencies
-				? Object.keys(packageJson.dependencies).map(dep => toDep(dep, packageJson.dependencies[dep]))
-				: [];
-			const devDeps = packageJson.devDependencies
-				? Object.keys(packageJson.devDependencies).map(dep => toDep(dep, packageJson.devDependencies[dep]))
-				: [];
-			return deps.concat(devDeps);
-		} else {
-			return [];
-		}
-	}
-
-	private pathExists(p: string): boolean {
-		try {
-			fs.accessSync(p);
-		} catch {
-			return false;
-		}
-
-		return true;
-	}*/
 }
 
 export class Repository extends vscode.TreeItem {
