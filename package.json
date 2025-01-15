@@ -6,7 +6,7 @@
 	"publisher": "VignaeshRamA",
 	"private": true,
 	"license": "BSD-3-Clause",
-	"icon": "code-feed-github.png",
+	"icon": "codefeeds-github-icon.png",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/vignaesh01/codefeed-github"
