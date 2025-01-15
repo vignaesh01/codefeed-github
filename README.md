@@ -9,7 +9,7 @@
 ## 🌟 Features
 
 - 📸 **Instagram-Styled Feed:** View recent pull requests from your starred repositories in a visually engaging feed.
-- 💬 **Catchy Captions:** Let the AI (powered by GPT-4) generate fun, trendy, and insightful captions for every code update.
+- 💬 **Catchy Captions:** Let the AI (powered by GPT-4o) generate fun, trendy, and insightful captions for every code update.
 - 🔢 **Top 10 Updates:** Get a snapshot of the **10 most recent pull requests** and stay up-to-date.
 - 🔍 **Quick Browsing:** Look at specific repositories' feed to manage your coding focus with flair.
 - 🚦 **AI Insights:** Powered by **GitHub Copilot's GPT-4o model**, giving life to your code updates with human-like creativity.
